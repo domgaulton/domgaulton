@@ -15,7 +15,7 @@ const Home = () => {
       <div className="bg-[url('/dg-atari.svg')] dark:bg-[url('/dg-atari--dark.svg')] w-36 md:w-48 aspect-video bg-no-repeat bg-center"></div>
       <h1 className="text-4xl md:text-6xl my-8">domgaulton.tech</h1>
       <h2 className="text-2xl mb-4">
-        An experienced JavaScript Software Developer based in London, UK
+        An experienced JavaScript software developer based in London, UK
       </h2>
 
       <a

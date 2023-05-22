@@ -18,7 +18,7 @@ const About = () => {
   return (
     <HeaderAndFooter
       childWrappingTag="article"
-      childWrappingClasses="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center"
+      childWrappingClasses="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center max-w-4xl  mx-auto"
     >
       <Head>
         <title>About Dom Gaulton</title>
@@ -41,7 +41,7 @@ const About = () => {
       <h2 className="text-xl mb-4 font-bold">
         👨‍💻 Tech Stack / Proficiencies 👨‍💻
       </h2>
-      <ul className="list-disc mb-12">
+      <ul className="mb-12">
         {TECH_LINKS.map((link: string) => {
           return <li key={link}>{link}</li>;
         })}

@@ -7,7 +7,7 @@ const Navigation = () => {
   const router = useRouter();
   const currentRoute = router.route;
   return (
-    <header className="fixed top-0 w-full backdrop-blur-lg text-dark z-10 dark:text-white bg-gradient-to-b from-black/5 via-black/5 via-80% to-white dark:bg-gradient-to-b dark:from-white/5 dark:via-white/5 dark:via-80% dark:to-black">
+    <header className="fixed top-0 w-full backdrop-blur-md text-dark border-b-[1px] border-slate-50/50 z-10 dark:text-white bg-white/30 dark:bg-black/20 dark:border-slate-800/50">
       <nav className="h-12">
         <ul className="flex items-center justify-end h-full max-w-7xl mx-auto px-4 gap-4">
           {HEADER_LINKS.map((link: IHeaderLinks) => {
