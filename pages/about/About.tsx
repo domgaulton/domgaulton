@@ -1,6 +1,18 @@
 import HeaderAndFooter from "@/components/HeaderAndFooter";
-import { TECH_LINKS } from "./About.data";
 import Head from "next/head";
+
+export const TECH_LINKS = [
+  "HTML",
+  "CSS",
+  "Next.js",
+  "Vercel",
+  "Tailwind",
+  "Storybook",
+  "Github",
+  "VSCode",
+  "Firebase",
+  "AWS",
+];
 
 const About = () => {
   return (
