@@ -54,7 +54,6 @@ const MoxiesPubs = ({ data }: { data: any }) => {
 
 export async function getServerSideProps() {
   const data = await getSheetData();
-  console.log(data);
 
   const keys = data[0];
   const values = data.slice(1);
@@ -63,14 +62,11 @@ export async function getServerSideProps() {
     return row.reduce((acc: any, value: any, index: number) => {
       // acc[keys[index]] = { ...value, position: [value.lat, value.lng] };
       // const updatedValue = { value, position: [value.lat, value.lng] };
-      console.log({ acc, value });
       acc[keys[index]] = value;
       acc['position'] = [acc.lat, acc.lng];
       return acc;
     }, {});
   });
-
-  console.log({ formattedData });
 
   return {
     props: {
