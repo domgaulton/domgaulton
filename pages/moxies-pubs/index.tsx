@@ -40,9 +40,9 @@ const MoxiesPubs = ({ data }: { data: any }) => {
   return (
     <>
       <div className="text-center">
-        <p>Weeks to go: {weeksRemaining}</p>
-        <p>Weeks alive: {weeksSince}</p>
-        <p>Pubs gone to: {data.length}</p>
+        <p>Weeks remaining: {weeksRemaining}</p>
+        <p>Weeks passed: {weeksSince}</p>
+        <p>Pubs visited: {data.length}</p>
         <p>Pubs remaining (47 needed): {47 - data.length}</p>
       </div>
       <div className="w-full h-96 overflow-hidden">
