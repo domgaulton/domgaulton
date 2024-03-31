@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dg-projects-27574",
+  "private_key_id": "7c4ce4ae7f30f2ed7278999c2e78ca81f74a60db",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQChSlyQTyTyjjOt\nSJEs4E/mozVbh3HFaBW4PI8Pe4RDAA6dlGO8cqp56XoEN/u5FGqCBUmQ+MSBWOe6\nMnnJXuW6nhdyE3VvHHHBIASnOq42j4LP44skDS8DpV5qVj6Tqq6i0mZRoFan0gvJ\nlPJzb+E+85JJhn4aTBhOYre/H7gYxRn8MeTynyjwtGYl7BSzQ6iy28t/jBsCxjUb\nxOx72btM3vJFFIYWyGLjfTpOrCbT24kCzmF3uMPouruw00OwJGeQd/sjkdeT+O0g\nG87E7nfM5xD9mGkgZ3qxySfKXXeFMnuPU0X/naxNCrEPEw4K1z+3tnMeZfnnzDpQ\nVaduiFahAgMBAAECggEADpYyDt8JgWI47Df+4SccMsiZ38A9GtRR+oqHiafrC0Ar\nEjdEWduo7UOfRFhnzJI7G60svQ6yftwygNVlzD9n2VvI1QlLepQA+a1SnmkhLlAG\nTZTPlaAXm2XORyGroSEzkAglNsagb6cAZ+evkZ8RqObQWRPvvaMaI6Sr534P4TV1\nOsOF1FN4TZEbbaJn+2I9r5vusK560TktWezYT0BhAxuPs/kCX6BlV1oRfz+4xRqB\n2CzmLLJ4Gr0VaLAWWMlLQ7HLkqQd/BK7y49e3A+KZIFOdqpBGJQK+1QJG/KRjZ5N\noGSacnf/cyYk+YhAzbSVRr83yZ8t8bj7kkxC3sfgDQKBgQDfpPnsixeL3MLrQd/z\na4NEtPohroFzz1/fpr2AXlseejaHd4cYgvQY94dGmj6RMiCKNKgvl5fnaAjBSUgC\nYrpdFbqVDFOGdR1RQVDdDw4bUdDXeoy1eswBW7aNHBFJkHdwe/rnH0/tZFCO0evj\nSWlO0VEO36xjwnnUBjlc2RXSiwKBgQC4oAIVhcBXRxu44fs3GfVMSSOEuy3VTLXp\ng/cK15+DfcKvq9//G4yMRpp6PBXRM4kGNHB4Ye+sjOkVwUafCO1MvJr2jL1Raidq\ntHUPXWbMhPKXrAwZzboSshI9YvDvnyFEwA+ONjGWhKAKUwqlSycQPkVR5TBiO6fH\nHT22/ot9AwKBgDbSWRVb7zSws/M5Xa1s4Gu6NUqGXWNHJUhMtk0+U/W/nZhNe4dN\nqopoOvfanZW4BPP7/nJUJb9q6CKBVS6IhwiEaA1bTSo7kSk26pyVsS6POrNnbhCa\nfmGi2rfydmZjDHQ9X/7B1TTrDzhDSyCXAUJ52vXbbIWzyWto7yzMZiYLAoGAYRBG\naDhMWdZZnca5A0wTaYreMI8T1psg3Gbzv3CDPWclrqPm/MDoEGuiFXd3ZOf6Nxfk\ntXWPwyDF/hkB3uSblYdm1Q5DDgWIOZIsJOrO++E9hT3/kqVVGTUjX8CfuOrpW7K5\nuuOFCIQre6IS67nqDKEgYqDi4hJI7+bQpl+GyC8CgYBh2Q27SPFcBEWHp5Pe7D3C\n2gedNtMLueF3AqRvxn8anvh839Hk1YUXcvnnR4W77bRNn5aVtjwe+zyxO9DTPNXx\nUrVA5Nn7XXzeYXowqsfP7CHoimtC33RDz6bAWbEXh8ukTZHi67TY/9kevGT4j833\nHzla3QL786zF+sYwiOeB2Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dom-gaulton-projects@dg-projects-27574.iam.gserviceaccount.com",
+  "client_id": "103060053676241831439",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dom-gaulton-projects%40dg-projects-27574.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,5 +1,5 @@
-import HeaderAndFooter from "@/components/HeaderAndFooter";
-import Head from "next/head";
+import HeaderAndFooter from '@/components/HeaderAndFooter';
+import Head from 'next/head';
 
 const Home = () => {
   return (
