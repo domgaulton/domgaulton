@@ -1,12 +1,19 @@
 const { google } = require('googleapis');
 
+const {
+  GOOGLE_IAM_CLIENT_EMAIL,
+  GOOGLE_IAM_CLIENT_ID,
+  GOOGLE_IAM_PROJECT_ID,
+  GOOGLE_IAM_PRIVATE_KEY,
+} = process.env;
+
 const auth = new google.auth.GoogleAuth({
   scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
   credentials: {
-    client_email: process.env.GOOGLE_IAM_CLIENT_EMAIL,
-    client_id: process.env.GOOGLE_IAM_CLIENT_ID,
-    project_id: process.env.GOOGLE_IAM_PROJECT_ID,
-    private_key: process.env.GOOGLE_IAM_PRIVATE_KEY,
+    client_email: GOOGLE_IAM_CLIENT_EMAIL,
+    client_id: GOOGLE_IAM_CLIENT_ID,
+    project_id: GOOGLE_IAM_PROJECT_ID,
+    private_key: GOOGLE_IAM_PRIVATE_KEY,
   },
 });
 
