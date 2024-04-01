@@ -1,12 +1,12 @@
 import dynamic from 'next/dynamic';
-import { getSheetData } from '../api/google-sheets';
+import { getSheetData } from '../api/google-sheets/get-sheet-data';
 
 const MapWithPinsDynamic = dynamic(() => import('@/components/MapWithPins'), {
   ssr: false,
 });
 
 const MoxiesPubs = ({ data }: { data: any }) => {
-  console.log({ data });
+  // console.log({ data });
   function weeksSinceDate(targetDate: Date) {
     // Get the current date
     const currentDate = new Date();
