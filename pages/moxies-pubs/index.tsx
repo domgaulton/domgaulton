@@ -40,14 +40,16 @@ const MoxiesPubs = ({ data }: { data: any }) => {
 
   const weeksRemaining = weeksUntilDate(new Date('2025-01-01'));
   const weeksSince = weeksSinceDate(new Date('2024-02-12'));
-
+  const totalWeeks = weeksRemaining + weeksSince;
   return (
     <>
       <div className="text-center">
         <p>Weeks remaining: {weeksRemaining}</p>
         <p>Weeks passed: {weeksSince}</p>
         <p>Pubs visited: {pubsVisited}</p>
-        <p>Pubs remaining (47 needed): {47 - pubsVisited}</p>
+        <p>
+          Pubs remaining ({totalWeeks} needed): {totalWeeks - pubsVisited}
+        </p>
       </div>
       <div className="w-full h-96 overflow-hidden">
         <MapWithPinsDynamic pins={data} />
