@@ -45,8 +45,8 @@ export async function setSheetData(req: NextApiRequest, res: NextApiRequest) {
     console.log('Cell updated successfully:', response.data);
   } catch (error) {
     console.error('Error retrieving data:', error);
-    console.error('Error updating cell:', error?.message);
-    console.error('Error details:', error?.errors);
+    // console.error('Error updating cell:', error?.message);
+    // console.error('Error details:', error?.errors);
     return null;
   }
 }
