@@ -43,7 +43,22 @@ const MoxiesPubs = ({ data }: { data: any }) => {
   const totalWeeks = weeksRemaining + weeksSince;
   return (
     <>
-      <div className="text-center">
+      <div className="">
+        <div
+          style={{ width: `${(weeksSince / totalWeeks) * 100}%` }}
+          className="bg-red-500 h-8 flex align-center block"
+        >
+          <span className="line-0">{weeksSince} weeks through</span>
+        </div>
+
+        <div
+          style={{ width: `${(pubsVisited / totalWeeks) * 100}%` }}
+          className="bg-green-500 h-8 flex align-center block"
+        >
+          <span className="line-0">{pubsVisited} pubs visited</span>
+        </div>
+      </div>
+      <div className="text-center text-xs">
         <p>Weeks remaining: {weeksRemaining}</p>
         <p>Weeks passed: {weeksSince}</p>
         <p>Pubs visited: {pubsVisited}</p>
