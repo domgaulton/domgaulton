@@ -33,7 +33,7 @@ const MapWithPins = ({ pins }: { pins: any }) => {
     <MapContainer
       center={[51.4752262, -0.052643]}
       zoom={12}
-      style={{ height: '500px' }}
+      style={{ height: '700px' }}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {pins.map((pin: any, index: number) => (

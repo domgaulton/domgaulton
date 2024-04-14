@@ -43,30 +43,32 @@ const MoxiesPubs = ({ data }: { data: any }) => {
   const totalWeeks = weeksRemaining + weeksSince;
   return (
     <>
-      <div className="">
+      <div className="text-xs">
         <div
           style={{ width: `${(weeksSince / totalWeeks) * 100}%` }}
-          className="bg-red-500 h-8 flex align-center block"
+          className="bg-red-500 h-8 flex items-center block"
         >
-          <span className="line-0">{weeksSince} weeks through</span>
+          <span className="line-0 pl-0.5 sm:pl-2">{weeksSince} wks old</span>
         </div>
 
         <div
           style={{ width: `${(pubsVisited / totalWeeks) * 100}%` }}
-          className="bg-green-500 h-8 flex align-center block"
+          className="bg-green-500 h-8 flex items-center block"
         >
-          <span className="line-0">{pubsVisited} pubs visited</span>
+          <span className="line-0 pl-0.5 sm:pl-2">
+            {pubsVisited} pubs visited
+          </span>
         </div>
       </div>
-      <div className="text-center text-xs">
+      <div className="text-center text-xs mb-2">
         <p>Weeks remaining: {weeksRemaining}</p>
-        <p>Weeks passed: {weeksSince}</p>
+        <p>Weeks old: {weeksSince}</p>
         <p>Pubs visited: {pubsVisited}</p>
         <p>
           Pubs remaining ({totalWeeks} needed): {totalWeeks - pubsVisited}
         </p>
       </div>
-      <div className="w-full h-96 overflow-hidden">
+      <div className="w-full h-[700px] overflow-hidden">
         <MapWithPinsDynamic pins={data} />
       </div>
     </>
