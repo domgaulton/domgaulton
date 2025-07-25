@@ -13,11 +13,11 @@ const Contact = () => {
       <h1 className="text-3xl mb-4">Get in touch</h1>
 
       <a
-        href="mailto:hello@domgaulton.tech"
+        href="mailto:domgaulton@gmail.com"
         className="text-lg hover:underline flex items-center gap-2"
       >
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/envelope-000.svg')] dark:bg-[url('/svgs/envelope-fff.svg')]"></span>
-        <p>hello@domgaulton.tech</p>
+        <p>domgaulton@gmail.com</p>
       </a>
     </HeaderAndFooter>
   );
