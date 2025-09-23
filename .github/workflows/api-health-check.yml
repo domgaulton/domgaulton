@@ -16,6 +16,8 @@ jobs:
     
     - name: Test API Endpoint
       run: |
+        echo "Waiting for 1 minute before testing API endpoint"
+        sleep 60
         echo "Testing API endpoint"
         
         # Make HTTP request and capture response code
