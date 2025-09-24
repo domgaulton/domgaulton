@@ -4,7 +4,7 @@ export const metadata = {
   title: 'About Dom Gaulton',
 };
 
-export const TECH_LINKS = [
+const TECH_LINKS = [
   'React',
   'Typescript',
   'Node',
