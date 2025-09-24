@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -7,7 +7,7 @@ export default function Document() {
         <meta
           name="description"
           content={
-            "London based senior full stack developer currently working at Lottie.org"
+            'London based senior full stack developer currently working at Lottie.org'
           }
         />
         <link rel="icon" href="/favicon.ico" />

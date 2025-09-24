@@ -1,0 +1,1 @@
+- Prefer `pnpm` to `npm`

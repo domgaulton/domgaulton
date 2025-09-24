@@ -1,18 +1,18 @@
-import Details from "@/components/Details";
-import HeaderAndFooter from "@/components/HeaderAndFooter";
-import Head from "next/head";
+import Details from '@/components/Details';
+import HeaderAndFooter from '@/components/HeaderAndFooter';
+import Head from 'next/head';
 
 export const TECH_LINKS = [
-  "React",
-  "Typescript",
-  "Node",
-  "TRPC",
-  "Next",
-  "Tanstack",
-  "Prisma",
-  "Clerk",
-  "Postgres",
-  "SQL",
+  'React',
+  'Typescript',
+  'Node',
+  'TRPC',
+  'Next',
+  'Tanstack',
+  'Prisma',
+  'Clerk',
+  'Postgres',
+  'SQL',
 ];
 
 const About = () => {
@@ -24,9 +24,7 @@ const About = () => {
       <Head>
         <title>About Dom Gaulton</title>
       </Head>
-      <h1 className="text-3xl md:text-4xl mb-2">
-        Hi, I&apos;m Dom Gaulton.
-      </h1>
+      <h1 className="text-3xl md:text-4xl mb-2">Hi, I&apos;m Dom Gaulton.</h1>
       <h2 className="text-2xl mb-8">A South-East London based Developer</h2>
 
       <Details />
@@ -46,6 +44,7 @@ const About = () => {
         href="https://github.com/domgaulton"
         target="_blank"
         className="text-lg hover:underline flex items-center gap-2 mb-4"
+        rel="noopener"
       >
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/github-000.svg')] dark:bg-[url('/svgs/github-fff.svg')]"></span>
         <p>Github</p>
@@ -54,6 +53,7 @@ const About = () => {
         href="https://www.linkedin.com/in/dom-gaulton-00503b39/"
         target="_blank"
         className="text-lg hover:underline flex items-center gap-2 mb-4"
+        rel="noopener"
       >
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/linkedin-000.svg')] dark:bg-[url('/svgs/linkedin-fff.svg')]"></span>
         <p>LinkedIn</p>
@@ -69,6 +69,7 @@ const About = () => {
         href="/documents/dom_gaulton_cv.pdf"
         target="_blank"
         className="text-lg hover:underline flex items-center gap-2 mb-4"
+        rel="noopener"
       >
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/cv-000.svg')] dark:bg-[url('/svgs/cv-fff.svg')]"></span>
         <p>CV</p>

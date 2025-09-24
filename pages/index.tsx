@@ -21,6 +21,7 @@ const Home = () => {
         href="https://github.com/domgaulton"
         target="_blank"
         className="text-lg hover:underline flex items-center gap-2 mb-4"
+        rel="noopener"
       >
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/github-000.svg')] dark:bg-[url('/svgs/github-fff.svg')]"></span>
         <p>Github</p>
@@ -29,6 +30,7 @@ const Home = () => {
         href="https://www.linkedin.com/in/dom-gaulton-00503b39/"
         target="_blank"
         className="text-lg hover:underline flex items-center gap-2 mb-4"
+        rel="noopener"
       >
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/linkedin-000.svg')] dark:bg-[url('/svgs/linkedin-fff.svg')]"></span>
         <p>LinkedIn</p>
@@ -37,6 +39,7 @@ const Home = () => {
         href="/documents/dom_gaulton_cv.pdf"
         target="_blank"
         className="text-lg hover:underline flex items-center gap-2"
+        rel="noopener"
       >
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/cv-000.svg')] dark:bg-[url('/svgs/cv-fff.svg')]"></span>
         <p>CV</p>

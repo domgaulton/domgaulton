@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { HEADER_LINKS } from "./Header.data";
-import { IHeaderLinks } from "./Header.model";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { HEADER_LINKS } from './Header.data';
+import type { IHeaderLinks } from './Header.model';
 
 const Navigation = () => {
   const router = useRouter();
@@ -16,7 +16,7 @@ const Navigation = () => {
                 <Link
                   href={link.href}
                   passHref
-                  className={currentRoute === link.href ? "underline" : ""}
+                  className={currentRoute === link.href ? 'underline' : ''}
                 >
                   {link.title}
                 </Link>
