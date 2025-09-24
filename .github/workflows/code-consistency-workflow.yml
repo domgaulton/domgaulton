@@ -2,28 +2,31 @@ name: Code Consistency Workflow
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   code-consistency:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-    - name: Run Biome Lint
-      run: npm run lint
+      - name: Install dependencies
+        run: pnpm install
 
-    - name: Run Biome Format
-      run: npm run format
+      - name: Run Biome Lint
+        run: pnpm run lint
+
+      - name: Run Biome Format
+        run: pnpm run format
