@@ -1,18 +1,12 @@
 import Details from '@/components/Details';
-import HeaderAndFooter from '@/components/HeaderAndFooter';
-import Head from 'next/head';
 
-const Home = () => {
+export const metadata = {
+  title: 'domgaulton.tech',
+};
+
+export default function Home() {
   return (
-    <HeaderAndFooter
-      showHeader={true}
-      showFooter={false}
-      childWrappingClasses="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center"
-      childWrappingTag="main"
-    >
-      <Head>
-        <title>domgaulton.tech</title>
-      </Head>
+    <main className="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center">
       <div className="bg-[url('/dg-atari.svg')] dark:bg-[url('/dg-atari--dark.svg')] w-36 md:w-48 aspect-video bg-no-repeat bg-center"></div>
       <h1 className="text-4xl md:text-6xl my-8">domgaulton.tech</h1>
       <Details />
@@ -44,8 +38,6 @@ const Home = () => {
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/cv-000.svg')] dark:bg-[url('/svgs/cv-fff.svg')]"></span>
         <p>CV</p>
       </a>
-    </HeaderAndFooter>
+    </main>
   );
-};
-
-export default Home;
+}

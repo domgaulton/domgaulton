@@ -1,8 +1,10 @@
 import Details from '@/components/Details';
-import HeaderAndFooter from '@/components/HeaderAndFooter';
-import Head from 'next/head';
 
-export const TECH_LINKS = [
+export const metadata = {
+  title: 'About Dom Gaulton',
+};
+
+const TECH_LINKS = [
   'React',
   'Typescript',
   'Node',
@@ -15,15 +17,9 @@ export const TECH_LINKS = [
   'SQL',
 ];
 
-const About = () => {
+export default function About() {
   return (
-    <HeaderAndFooter
-      childWrappingTag="article"
-      childWrappingClasses="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center max-w-4xl mx-auto"
-    >
-      <Head>
-        <title>About Dom Gaulton</title>
-      </Head>
+    <article className="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center max-w-4xl mx-auto">
       <h1 className="text-3xl md:text-4xl mb-2">Hi, I&apos;m Dom Gaulton.</h1>
       <h2 className="text-2xl mb-8">A South-East London based Developer</h2>
 
@@ -74,8 +70,6 @@ const About = () => {
         <span className="h-4 w-4 bg-no-repeat bg-center bg-[url('/svgs/cv-000.svg')] dark:bg-[url('/svgs/cv-fff.svg')]"></span>
         <p>CV</p>
       </a>
-    </HeaderAndFooter>
+    </article>
   );
-};
-
-export default About;
+}

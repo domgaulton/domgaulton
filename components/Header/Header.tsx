@@ -1,11 +1,12 @@
+'use client';
+
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import { HEADER_LINKS } from './Header.data';
 import type { IHeaderLinks } from './Header.model';
 
 const Navigation = () => {
-  const router = useRouter();
-  const currentRoute = router.route;
+  const currentRoute = usePathname();
   return (
     <header className="fixed top-0 w-full backdrop-blur-md text-dark border-b-[1px] border-slate-50/50 z-10 dark:text-white bg-white/30 dark:bg-black/20 dark:border-slate-800/50">
       <nav className="h-12">
