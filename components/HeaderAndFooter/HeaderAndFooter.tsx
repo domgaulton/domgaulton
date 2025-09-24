@@ -11,8 +11,8 @@ const HeaderAndFooter = ({
   children,
 }: IHeaderAndFooter) => {
   const bodyClasses = clsx(childWrappingClasses, 'max-w-4xl mx-auto', {
-    "min-h-[calc(100vh-theme(space.12))] pt-20": showHeader && showFooter,
-    "min-h-screen": showHeader && !showFooter,
+    'min-h-[calc(100vh-theme(space.12))] pt-20': showHeader && showFooter,
+    'min-h-screen': showHeader && !showFooter,
   });
 
   const Tag = `${childWrappingTag}` as IHeaderAndFooter['childWrappingTag'];
