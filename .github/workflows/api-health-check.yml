@@ -1,0 +1,52 @@
+name: API Health Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  api-health-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Test API Endpoint
+      run: |
+        echo "Waiting for 1 minute before testing API endpoint"
+        sleep 60
+        echo "Testing API endpoint"
+        
+        # Make HTTP request and capture response code
+        response_code=$(curl -s -o /dev/null -w "%{http_code}" https://domgaulton.tech/api/health-check)
+        
+        echo "Received HTTP status code: $response_code"
+        
+        # Check if response code is 200
+        if [ "$response_code" = "200" ]; then
+          echo "✅ API health check passed - received expected 200 status code"
+          exit 0
+        else
+          echo "❌ API health check failed - expected 200 but received $response_code"
+          exit 1
+        fi
+    
+    - name: API Health Check with Retry
+      if: failure()
+      run: |
+        echo "Retrying API health check with more details..."
+        
+        # Retry with verbose output for debugging
+        curl -v --fail --max-time 30 https://domgaulton.tech/api/health-check || {
+          echo "❌ API endpoint failed after retry"
+          echo "This could indicate:"
+          echo "  - The API is down or not responding"
+          echo "  - Network connectivity issues"
+          echo "  - The endpoint URL has changed"
+          exit 1
+        }
+        
+        echo "✅ API health check passed on retry"

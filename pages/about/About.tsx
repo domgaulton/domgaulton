@@ -19,7 +19,7 @@ const About = () => {
   return (
     <HeaderAndFooter
       childWrappingTag="article"
-      childWrappingClasses="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center max-w-4xl  mx-auto"
+      childWrappingClasses="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center max-w-4xl mx-auto"
     >
       <Head>
         <title>About Dom Gaulton</title>
