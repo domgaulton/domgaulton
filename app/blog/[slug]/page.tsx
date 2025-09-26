@@ -5,6 +5,7 @@ import Markdown from "markdown-to-jsx";
 import { CodeBlock } from "@/components/CodeBlock/CodeBlock";
 import Image from "next/image";
 import { InlineCode } from "@/components/InlineCode/InlineCode";
+import type { Metadata } from 'next'
 
 export const generateStaticParams = async () => {
   const files = fs.readdirSync(path.join("data/blogs/content"));
@@ -15,6 +16,20 @@ export const generateStaticParams = async () => {
   return paths;
 };
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const slug = (await params).slug
+  const { data: frontmatter } = getPostContent(slug);
+ 
+  return {
+    title: frontmatter.title,
+    description: frontmatter.description,
+  }
+}
+
 const getPostContent = (slug: string) => {
   const markdownWithMeta = fs.readFileSync(
     path.join("data/blogs/content", slug + ".md"),
@@ -22,6 +37,8 @@ const getPostContent = (slug: string) => {
   );
   return matter(markdownWithMeta);
 };
+
+
 
 const BlogPost = async ({
   params,
@@ -57,7 +74,10 @@ const BlogPost = async ({
                 },
               },
               h1: {
-                component: (props) => <h1 style={{ fontSize: '2rem' }}>{props.children}</h1>
+                component: (props) => <h1 style={{ fontSize: '1.6rem', marginBottom: '0.8em' }}>{props.children}</h1>
+              },
+              h2: {
+                component: (props) => <h2 style={{ fontSize: '1.1rem', marginBottom: '0.8em' }}>{props.children}</h2>
               },
               p: {
                 component: (props) => <p style={{ margin: '1rem 0' }} {...props} />
@@ -68,26 +88,28 @@ const BlogPost = async ({
               ul: {
                 component: (props) => (
                   <ul style={{
-                    paddingLeft: '1.5em',
+                    padding: '0.5em 0.5em 0.5em 1.5em',
                     background: '#f9f9f9',
                     borderRadius: '8px',
-                    margin: '1em 0'
+                    margin: '1em 0',
+                    listStyleType: 'disc'
                   }} {...props} />
                 )
               },
               ol: {
                 component: (props) => (
                   <ol style={{
-                    paddingLeft: '1.5em',
+                    padding: '0.5em 0.5em 0.5em 1.5em',
                     background: '#eef6ff',
                     borderRadius: '8px',
-                    margin: '1em 0'
+                    margin: '1em 0',
+                    listStyleType: 'decimal'
                   }} {...props} />
                 )
               },
               li: {
                 component: (props) => (
-                  <li style={{ marginBottom: '0.5em', fontSize: '1.05em', listStyleType: 'disc' }} {...props} />
+                  <li style={{ marginBottom: '0.5em', fontSize: '1.05em' }} {...props} />
                 )
               }
             },

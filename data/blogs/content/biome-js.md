@@ -59,42 +59,42 @@ Add these scripts to your `package.json`:
 
 ---
 
-# Example `biome.json` Configuration
+## Example `biome.json` Configuration
 
 ```json
+"formatter": {
+  "enabled": true,
+  "indentStyle": "space",
+  "indentWidth": 2,
+  "lineWidth": 100
+},
+"linter": {
+  "enabled": true,
+  "rules": {
+  "recommended": true
+}
+},
+"javascript": {
   "formatter": {
-    "enabled": true,
-    "indentStyle": "space",
-    "indentWidth": 2,
-    "lineWidth": 100
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-    "recommended": true
-  }
-  },
-  "javascript": {
-    "formatter": {
-    "enabled": true,
-    "quoteStyle": "single",
-    "trailingCommas": "all"
-  }
-  },
-  "organizeImports": {
-    "enabled": true
-  },
-  "files": {
-    "ignore": ["dist", "node_modules"]
-  }
+  "enabled": true,
+  "quoteStyle": "single",
+  "trailingCommas": "all"
+}
+},
+"organizeImports": {
+  "enabled": true
+},
+"files": {
+  "ignore": ["dist", "node_modules"]
+}
 ```
 
 ---
 
-# Running Biome in Your Project
+## Running Biome in Your Project
 
-- **Format all files:** `pnpm biome format --write .`
+1. **Format all files:** `pnpm biome format --write .`
 
-- **Check for issues (lint):** `pnpm biome check .`
+2. **Check for issues (lint):** `pnpm biome check .`
 
 Biome will now handle formatting, linting, and import organization on your codebase, saving time and reducing configuration headaches.
