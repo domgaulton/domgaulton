@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex h-full flex-col items-center justify-center px-4 dark:bg-black dark:text-white text-center">
+    <main className='flex h-full flex-col items-center justify-center px-4 '>
       <div className="bg-[url('/dg-atari.svg')] dark:bg-[url('/dg-atari--dark.svg')] w-36 md:w-48 aspect-video bg-no-repeat bg-center"></div>
       <h1 className="text-4xl md:text-6xl my-8">domgaulton.tech</h1>
       <Details />
